@@ -1,23 +1,23 @@
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
+function domainName() {
+let pronoun = ["these", "those", "that", "ours"];
+let adjective = ["amused", "cheerful", "calm", "disturbed"];
+let noun = ["people", "doors", "friends", "guys"];
+let com = [".com", ".us", ".net", ".io"];
+
+for (let i = 0; i < pronoun.length; i++) {
+  for (let j = 0; j < adjective.length; j++) {
+    for (let k = 0; k < noun.length; k++) {
+      for (let h = 0; h < com.length; h++) {
+        var third = noun[k];
+        var first = pronoun[i];
+        var second = adjective[j];
+        var fourth = com[h];
+        var result = first + second + third + fourth;
+        console.log(result);
+      }
+    }
   }
-  
-//   window.onload = function() {
-    //write your code here
-    let pronoun = ["these", "those", "that", "ours"];
-    let adjective = ["amused", "cheerful", "calm", "disturbed"];
-    let noun = ["people", "doors", "friends", "guys"];
-
-    // const domainName = "OMG! You will not believe me but...";
-    // document.head.innerHTML =
-
-      pronoun [getRandomInt(4)] +
-      " " +
-      adjective [getRandomInt(4)] +
-      " " +
-      noun [getRandomInt(4)] +
-      " " +
-      ".com";
-  };
-  console.log()
+}
+}
+document.getElementById("excusegenerator").innerHTML = domainName();
